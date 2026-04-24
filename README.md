@@ -6,17 +6,19 @@ Source code for the manuscript: Methylmercury Export from Arctic Great Rivers: M
 - [Scott Zolkos](https://www.researchgate.net/profile/Scott-Zolkos)
 - Colin P. Thackray
 - Prentiss H. Balcom
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- Suzanne E. Tank
+- James W. McClelland
+- Robert G.M. Spencer
+- Anya Suslova
+- Alexander Shiklomanov
+- Edda A. Mutter
+- Alexander V. Zhulidov
+- Tatiana Gurtovaya
+- Nikita Zimov
+- Sergey Zimov
+- Edwin Amos
+- David P. Krabbenhoft
+- Robert M. Holmes 
 - Elsie M. Sunderland
 
 ## Data
