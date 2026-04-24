@@ -23,41 +23,50 @@ Source code for the manuscript: Methylmercury Export from Arctic Great Rivers: M
 
 ## Data
 ### The following data associated with this manuscript can be downloaded from [Zolkos et al. 2026](https://doi.org/):
-#### Data used in generation of results
-- *polaris_data.csv* (called in script '1_compile.R'): Soils data from The Polaris Project (henceforth, 'Polaris') used in this study.  
+#### Data used in generation of results, including Load Estimator (LOADEST) modeling
+- *Ob_Salekhard_Version_20251208.xlsx* (called in script '2_discharge_data.R'): Discharge data for Ob' river.  
 
-- *thg_ykd_al.csv* (called in script '1_compile.R'): Hg data measured on Polaris soils for this study.  
+- *Yenisei_Igarka_Version_20251208.xlsx* (called in script '2_discharge_data.R'): Discharge data for Yenisey river.  
 
-- *ykd_veg_biomass.csv* (called in script '1_compile.R'): Polaris data on vegetation biomass in the YK-Delta (collected during 2017 & 2018 field expeditions).  
+- *Lena_Kyusyur_Version_20251208.xlsx* (called in script '2_discharge_data.R'): Discharge data for Lena river.  
 
-- *ykd_veg_hgt.csv* (called in script '1_compile.R'): Hg data measured on Polaris vegetation for this study.  
+- *Kolyma_Kolymskoe_Version_20251208.xlsx* (called in script '2_discharge_data.R'): Discharge data for Kolyma river.  
 
-- *ykd_hg_ub_site_locs_validated_2023_10_06.csv* (called in script '1_compile.R'): Data on soil characteristics and SOC & Hg content, for use in calculating averages for sites within the same 30 m Landsat pixel.   
+- *Yukon_PilotStation_Version_20251208.xlsx* (called in script '2_discharge_data.R'): Discharge data for Yukon river.  
 
-- *moubarak_ykd_2015_burn_depth_2023_01_24.csv* (called in script '2_statistics.R'): Burn depth data from Moubarak et al. 2023 Biogeosciences.  
+- *Mackenzie_ArcticRedRiver_Version_20251208.xlsx* (called in script '2_discharge_data.R'): Discharge data for Mackenzie river.  
 
-- *burn_depth_preds_2023_01_20.csv* (called in script '5_burn_depth_rf_mdl.R'): Environmental data derived from satellite remote sensing for predicting burn depth; data extracted using Google Earth Engine script '3_burn_depth_predictors.js'.  
+- *Hg_2020_2024_QCd.xlsx* (called in script '3_hg_data.R'): Methyl and total mercury data.  
 
-- *burn_depth_preds_gee_2023_01_22.csv* (called in script '5_burn_depth_rf_mdl.R'): Large (80 MB) dataset of per-pixel (n > 400,000) burn depth predictions and values of satellite remote sensing indices used to burn depth. Request from lead author.  
+- *ArcticGRO-water-quality.xlsx* (called in script '4_arcticgro_chem_data.R'): Ancillary water chemistry data measured by ArcticGRO.  
 
-- *preds_for_soc_modeling_2023_10_06.csv* (called in script '6_soc_rf_mdl.R'): Environmental data derived from satellite remote sensing for predicting SOC; data extracted using Google Earth Engine script '4_soc_predictors.js'.  
+- *watershed_maat_tap_sd_2020_2024.xlsx* (called in script '7_watershed_data.R'): Watershed mean annual air temperature (MAAT) and total annual precipitation (TAP) and uncertainty (SD) for each.
 
-- *soc_preds_from_gee_2023_10_06.csv* (called in script '6_soc_rf_mdl.R'): Large (137 MB) dataset of per-pixel (n > 400,000) SOC predictions and values of satellite remote sensing indices used to predict SOC. Request from lead author.  
+- *AO shelf regional NPP.xlsx* (called in script '9_hg_npp_timing.R'): Mean monthly Arctic Ocean shelf region net primary production (NPP). See reference in manuscript for details. 
 
 ## Scripts
 #### *Note: These scripts process the data summarized above, which was compiled as detailed in the Methods of the manuscript. Users of these scripts will need to update the working directory pathway within scripts.*  
-- *1_compile.R*: Load and prepare data on soils (from unburned sites) and vegetation for subsequent analyses.  
+- *1_pkgs_and_funcs.R*: Prepare working environment.  
 
-- *2_statistics.R*: Compute statistics reported in the manuscript.  
+- *2_discharge_data.R*: Load and prepare discharge data.  
 
-- *3_burn_depth_predictors.js*: Google Earth Engine script for deriving environmental conditions from satellite remote sensing data and extracting the environmental data for use in development of predictive models of burn depth.  
+- *3_hg_data.R*: Load and prepare mercury concentration data.  
 
-- *4_soc_predictors.js*: Google Earth Engine script for deriving environmental conditions from satellite remote sensing data and extracting the environmental data for use in development of predictive models of soil organic carbon stores.
+- *4_arcticgro_chem_data.R*: Load and prepare ArcticGRO chemistry data.  
 
-- *5_burn_depth_rf_mdl.R*: Algorithm to predict YK Delta wildfire burn depth from field measurements of burn depth (Moubarak et al. 2022) and various remote sensing metrics of fire severity and terrain qualities.  
+- *5_compile.R*: 1) Build working dataframe for data analyses; (2) Compile concentration and flux data.  
 
-- *6_soc_rf_mdl.R*: Algorithm to predict YK Delta wildfire carbon stores from field measurements of carbon and various remote sensing metrics of vegetation and terrain characteristics.  
+- *6_flux_data.R*: Load and prepare constituent flux data.
 
-- *7_hg_emissions_uncertainty.R*: Estimate uncertainty in wildfire Hg emissions.  
+- *6b_flux_stats.R*: Calculate seasonal and annual constituent concentrations and fluxes from LOADEST data on MeHg, HgT, TSS, DOC.  
 
-- *8_peat_burned_area.R*: Estimate northern peatland wildfire Hg emissions from 2002-2022.
+- *7_watershed_data.R*: Load and prepare data on watershed environmental characteristics.  
+
+- *8_stats_rda.R*: Redundancy analysis for multivariate assessment of MeHg export patterns and drivers.  
+
+- *9_hg_npp_timing.R*: Compiles monthly Arctic riverine Hg export and NPP in shelf regions, to assess the timing and 
+## implications of Hg export / methylation for coastal ecosystem productivity.  
+
+- *10_plots.R*: Figures in manuscript.  
+
+- *.js*: Google Earth Engine script for deriving environmental conditions from satellite remote sensing data and extracting the environmental data for use in development of predictive models of burn depth.  
