@@ -40,7 +40,9 @@ Source code for the manuscript: Methylmercury Export from Arctic Great Rivers: M
 
 - *ArcticGRO-water-quality.xlsx* (called in script '4_arcticgro_chem_data.R'): Ancillary water chemistry data measured by ArcticGRO.  
 
-- *watershed_maat_tap_sd_2020_2024.xlsx* (called in script '7_watershed_data.R'): Watershed mean annual air temperature (MAAT) and total annual precipitation (TAP) and uncertainty (SD) for each.
+- *watershed_maat_tap_sd_2020_2024.xlsx* (called in script '7_watershed_data.R'): Watershed mean annual air temperature (MAAT) and total annual precipitation (TAP) and uncertainty (SD) for each.  
+
+- *watershed_pf_peat_coverage.xlsx* (called in script '7_watershed_data.R'): Permafrost distribution in each watershed.
 
 - *AO shelf regional NPP.xlsx* (called in script '9_hg_npp_timing.R'): Mean monthly Arctic Ocean shelf region net primary production (NPP). See reference in manuscript for details. 
 
@@ -64,8 +66,7 @@ Source code for the manuscript: Methylmercury Export from Arctic Great Rivers: M
 
 - *8_stats_rda.R*: Redundancy analysis for multivariate assessment of MeHg export patterns and drivers.  
 
-- *9_hg_npp_timing.R*: Compiles monthly Arctic riverine Hg export and NPP in shelf regions, to assess the timing and 
-## implications of Hg export / methylation for coastal ecosystem productivity.  
+- *9_hg_npp_timing.R*: Compiles monthly Arctic riverine Hg export and NPP in shelf regions, to assess the timing and implications of Hg export / methylation for coastal ecosystem productivity.  
 
 - *10_plots.R*: Figures in manuscript.  
 
