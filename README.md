@@ -70,4 +70,6 @@ Source code for the manuscript: Methylmercury Export from Arctic Great Rivers: M
 
 - *10_plots.R*: Figures in manuscript.  
 
-- *.js*: Google Earth Engine script for deriving environmental conditions from satellite remote sensing data and extracting the environmental data for use in development of predictive models of burn depth.  
+- *11_process_era_all_rivers_SD.js*: Google Earth Engine script for deriving MAAT and TAP from satellite remote sensing products.  
+
+- *12_mean_slope_all_rivers.js*: Google Earth Engine script for deriving watershed slope from satellite remote sensing products.  
