@@ -38,7 +38,7 @@ Source code for the manuscript: Methylmercury Export from Arctic Great Rivers: M
 
 - *Hg_2020_2024_QCd.xlsx* (called in script '3_hg_data.R'): Methyl and total mercury data.  
 
-- *ArcticGRO-water-quality.xlsx* (called in script '4_arcticgro_chem_data.R'): Ancillary water chemistry data measured by ArcticGRO.  
+- *ArcticGRO-water-quality_2026-08-25* (called in script '4_arcticgro_chem_data.R'): Ancillary water chemistry data measured by ArcticGRO, downloaded on 2026-08-25.  
 
 - *watershed_maat_tap_sd_2020_2024.xlsx* (called in script '7_watershed_data.R'): Watershed mean annual air temperature (MAAT) and total annual precipitation (TAP) and uncertainty (SD) for each.  
 
@@ -72,4 +72,6 @@ Source code for the manuscript: Methylmercury Export from Arctic Great Rivers: M
 
 - *11_process_era_all_rivers_SD.js*: Google Earth Engine script for deriving MAAT and TAP from satellite remote sensing products.  
 
-- *12_mean_slope_all_rivers.js*: Google Earth Engine script for deriving watershed slope from satellite remote sensing products.  
+- *12_mean_slope_all_rivers.js*: Google Earth Engine script for deriving watershed slope from satellite remote sensing products.
+
+- *13_responses_to_reviews.R*: Code for responses to journal reviews.  
